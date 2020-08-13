@@ -1,0 +1,81 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.container{
+    width:90%;
+    max-width: 850px;
+    margin:flex;
+    overflow:hidden;
+    margin: 0; auto;
+}
+body {
+    background-image: url(../imagenes/Adentro.png);
+    }
+
+
+header{
+    background: #242633; 
+    width:100%; */
+    overflow: hidden; /* es importante ya que le vamos a poner unos float para desplasar de izquierda a derecha algunos elementos */
+    margin-bottom: 20px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    padding: 10em 4em 10em 4em;
+    width: 115px;
+    max-width: 114px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #10141B;
+}
+
+.wrapper {
+    width:90%;
+    max-width: 1000px;
+    margin:flex;
+    overflow:hidden;
+}
+
+header nav a {
+    padding: 16px 12px;
+    color: #f2f2ff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition border: .3s ease;
+
+}
+
+header nav a:hover{
+    color:#D4AF37;
+
+}
+
+header nav a.active{
+    color: aquamarine;
+}
+
+.header2{
+    position: fixed;
+    height: 20%;
+}
+
+.header2 .logo {
+    line-height: 20%;
+    font-size: 25%;
+}
+.header2 nav {
+    line-height:100%;
+}
