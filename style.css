@@ -1,121 +1,117 @@
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: Harry P;
-      font-size: 35px;
-  }
-  
-  body {
-      background-image: url("imagenes/Estrellas.png");
-      font-family: Harry P;
-  }
-  
-  a {
-      text-decoration: none;
-      color: #9b9b9b;
-      margin: 10px 20px;
-      font-size: 40px;
-      font-weight: 500;
-      font-family: Harry P;
-  }
-  
-  .contenedor {
-      width: 100%;
-      height: 70;
-      margin: auto;
-  }
-  
-  header {
-      background: #242633;
-      width: 100%;
-      overflow: hidden;
-      /* es importante ya que le vamos a poner unos float para desplasar de izquierda a derecha algunos elementos */
-      margin-bottom: 0px;
-  }
-  
-  header.logo {
-      image-orientation: center;
-      margin: 40px;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  header div {
-      width: 100;
-      display: flex;
-      justify-content: center;
-      margin: 20px;
-  }
-  
-  header a.activo {
-      width: 100;
-      display: flex;
-      justify-content: center;
-      margin: 20px;
-  }
-  
-  header .barra-busqueda {
-      width: 50%;
-      height: 30px;
-      line-height: 40px;
-      background-color: blanchedalmond;
-      padding: 0 20px;
-      border-radius: 1000px;
-      border: none;
-      text-align: center;
-      font-size: 16;
-      justify-content: space-between;
-      align-items: center;
-      box-sizing: Harry P;
-  }
-  
-  header.categorias {
-      display: flex;
-      justify-content: center;
-      background-color: #10141B;
-  }
-  
-  header.categorias a.activo {
-      color: #9b9b9b;
-      margin: 10px 20px;
-      font-size: 50px;
-      font-weight: 700;
-      font-family: Harry P;
-  }
-  
-  .nombre_harry {
-      display: flex;
-      justify-content: right;
-      image-orientation: right;
-      margin: 0px;
-      justify-content: right;
-      align-items: right;
-      width: 25%;
-  }
-  
-  .entra_castillo {
-      display: flex;
-      justify-content: left;
-      image-orientation: left;
-      margin: 0px;
-      justify-content: space-between;
-      align-items: left;
-      width: 35%;
-  }
-  
-  p {
-      box-sizing: Harry P;
-      font-size: 45px;
-      color: #9b9b9b;
-  }
-  
-  header {
-      background: #242633;
-      width: 100%;
-      overflow: hidden;
-      margin-bottom: 20px;
-  }
-  
-  header nav a.active {
-      color: aquamarine;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: Harry P;
+    font-size: 35px;
+}
+
+body {
+    background-image: url("imagenes/Estrellas.png");
+    font-family: Harry P;
+}
+
+a {
+    text-decoration: none;
+    color: #9b9b9b;
+    margin: 10px 20px;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Harry P;
+}
+
+.contenedor {
+    width: 100%;
+    height: 70;
+    margin: auto;
+}
+
+header {
+    background: #242633;
+    width: 100%;
+    overflow: hidden;
+    /* es importante ya que le vamos a poner unos float para desplasar de izquierda a derecha algunos elementos */
+    margin-bottom: 0px;
+}
+
+header.logo {
+    image-orientation: center;
+    margin: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    width: 100;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+header a.activo {
+    width: 100;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+header .barra-busqueda {
+    width: 50%;
+    height: 30px;
+    line-height: 40px;
+    background-color: blanchedalmond;
+    padding: 0 20px;
+    border-radius: 1000px;
+    border: none;
+    text-align: center;
+    font-size: 16;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: Harry P;
+}
+
+header.categorias {
+    display: flex;
+    justify-content: center;
+    background-color: #10141B;
+}
+
+header.categorias a.activo {
+    color: #9b9b9b;
+    margin: 10px 20px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Harry P;
+}
+
+.nombre_harry {
+    display: flex;
+    justify-content: right;
+    image-orientation: right;
+    margin: 0px;
+    justify-content: right;
+    align-items: right;
+    width: 25%;
+}
+
+.entra_castillo {
+    display: flex;
+    justify-content: left;
+    image-orientation: left;
+    margin: 0px;
+    justify-content: space-between;
+    align-items: left;
+    width: 35%;
+}
+
+p {
+    box-sizing: Harry P;
+    font-size: 45px;
+    color: #9b9b9b;
+}
+
+header {
+    background: #242633;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
