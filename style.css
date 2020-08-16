@@ -4,35 +4,27 @@
     box-sizing: border-box;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-.container{
-    width:90%;
-    max-width: 850px;
-    margin:flex;
-    overflow:hidden;
-    margin: 0; auto;
-}
+
 body {
     background-image: url(../imagenes/Adentro.png);
+    background-position: no-repeat;
+    background-attachment: fixed;
     }
 
 
 header{
     background: #242633; 
-    width:100%; */
-    overflow: hidden; /* es importante ya que le vamos a poner unos float para desplasar de izquierda a derecha algunos elementos */
-    margin-bottom: 20px;
+    width:90%; /*largo del header */
 }
 
 header nav{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 .logo{
-    padding: 10em 4em 10em 4em;
     width: 115px;
     max-width: 114px;
+    text-align: center;
+    height: 100px;
 }
 .menu {
     display: flex;
@@ -54,8 +46,7 @@ header nav a {
     color: #f2f2ff;
     text-decoration: none;
     border-bottom: 1px solid transparent;
-    transition border: .3s ease;
-
+    transition-duration: 3ms;
 }
 
 header nav a:hover{
@@ -78,4 +69,34 @@ header nav a.active{
 }
 .header2 nav {
     line-height:100%;
+}
+
+.main {
+   background-image: url(../imagenes/Estrellas.png);
+   padding:0;
+   overflow: hidden;
+   text-align: center;
+   width: 400px;
+   height: 450px;
+   margin: 0px;
+   display: inline-block; 
+    
+  
+}
+
+.h2 {
+    font-family: 10em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.main img {
+    width: 100%;
+    border-radius: 9px;
+	border-style: solid;
+	border-color: black transparent;
+ }
+
+.imagen img {
+
+    width:100PX;
 }
