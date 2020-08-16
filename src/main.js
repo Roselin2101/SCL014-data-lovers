@@ -1,7 +1,13 @@
 //import { example } from 
 // aqui va todo lo del DOM para imprimir TODO  lo que queremos mostrar en el HTML
-
+// aqui recorro toda la data sin filtrar ni ordenar, solo mostrar informacion e imagen 
+// Importar las funciones que creamos en el data.js
+// './data.js';importar  datos  de  './data/potter/potter.js' ;
+// aqui recorro toda la data sin filtrar ni ordenar, solo mostrar informacion e imagen 
+// Importar las funciones que creamos en el data.js
+// './data.js';
 import data from './data/potter/potter.js';
+
 let cabeceraDinamica = document.getElementById("cabecera")
 cabeceraDinamica.innerHTML +=`
 <div class="container"> 
@@ -11,7 +17,6 @@ cabeceraDinamica.innerHTML +=`
             <input class="logo" type="image" src="./imagenes/Logo wizarding.png" id="RegresarPrimeraPantalla"/>
           </div>
         </div>
-
         <div class="menu">
           <nav>
             <a href="#" id="btn-personajes">Personajes</a>
@@ -24,47 +29,46 @@ cabeceraDinamica.innerHTML +=`
       </div>
       </header>
 </div>`
-const primerLogo = () => {
-let primeraPantalla = document.getElementById("RegresarPrimeraPantalla")
-primeraPantalla.innerHTML+=`
-<section>
-    // <div id="hola"> 
-      <input class="harryPotter" type="image" src="./imagenes/harry potter 2.png" id="github"/>
-      <input class="entraalcastillo" type="image" src="./imagenes/Hogwarts.png" id="castillo"/>
-      <img src="./imagenes/Estrellas.png" alt="Fondo Estrellas">
-    // </div>
-    </section>`
-}
 
-
-
+// console.log(data);
+// guardo la data en una variable y la llamo personajes
+//const personajes = data;
+//console.log(personajes)
+// const personajes = data;
 const mostrarPersonajes = () => {
+    // realizo el recorrido con un for de la nueva variable para verificar que se guardo bien y semuestra la data
     for (let i = 0; i <= data.length; i++) {
+    //    esto va aumentar hastya que se cumpla la condicion en este caso 25 se cuenta desde 0 a 24
+        // console.log(data[i])
+            //con los console verifico que ya se puede recorrer segun las propiedades de la data
+            // console.log(personajes[i]);
+            //console.log(personajes[i].name
+            // console.log(personajes[i].image)
+            //le doy funcionalidad al boton para mostrar los personajes en la pag
+        //let boton = document.getElementById("btn-personajes")
+        //boton.addEventListener("click", () => {
             let namePersonaje = document.getElementById("name");
+
             namePersonaje.innerHTML +=`
-                <div class="main">
+                <div class='main'>
                 <ul>
-                <br>
-                <br>
-                <div class="imagen">
-                <img src =${data[i].image } width="150" height="200">
-                </div>
-                <br>
-                <br>
+                <div>
+                <br><br>
+                <img src =${data[i].image}></div>
+                <br><br>
                 <li><h2>Nombre en la saga:</h2></li>
                 <li><h2>${data[i].name}</h2></li>
                 <li><h3>Tipo de patronus: ${data[i].patronus}</h3></li>
                 <li><h3>Nombre del actor: ${data[i].actor}</h3></li>
                 <li><h3>Fecha de nacimiento: ${data[i].dateOfBirth}</h3></li>
-                <br>
                 </ul>
                 </div>`
+                // con el + se esta concatenando cada iteracion y muestre de uno en uno 
+                // en este caso se declara la funcion que esta guardada en el html
+        //})
     }
 }
 
+//  mostrarPersonajes();
 let boton = document.getElementById("btn-personajes")
 boton.addEventListener("click", mostrarPersonajes )
-
-let botonInicio = document.getElementById("RegresarPrimeraPantalla")
-botonInicio.addEventListener("click", primerLogo )
-// console.log(botonInicio)
