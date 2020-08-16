@@ -11,14 +11,6 @@ body {
     background-attachment: fixed;
     }
 
-a {
-    text-decoration: none;
-    color: #9b9b9b;
-    margin: 10px 20px;
-    font-size: 40px;
-    font-weight: 500;
-    font-family: Harry P;
-}
 
 header{
     background: #242633; 
@@ -34,33 +26,19 @@ header nav{
     text-align: center;
     height: 100px;
 }
-
-header a.activo {
-    width: 100;
+.menu {
     display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-header .barra-busqueda {
-    width: 50%;
-    height: 30px;
-    line-height: 40px;
-    background-color: blanchedalmond;
-    padding: 0 20px;
-    border-radius: 1000px;
-    border: none;
-    text-align: center;
-    font-size: 16;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-sizing: Harry P;
+    background: #10141B;
 }
 
-header.categorias {
-    display: flex;
-    justify-content: center;
-    background-color: #10141B;
+.wrapper {
+    width:90%;
+    max-width: 1000px;
+    margin:flex;
+    overflow:hidden;
 }
 
 header nav a {
@@ -69,23 +47,20 @@ header nav a {
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition-duration: 3ms;
-
-
-
-.entra_castillo {
-    display: flex;
-    justify-content: left;
-    image-orientation: left;
-    margin: 0px;
-    justify-content: space-between;
-    align-items: left;
-    width: 35%;
 }
 
-p {
-    box-sizing: Harry P;
-    font-size: 45px;
-    color: #9b9b9b;
+header nav a:hover{
+    color:#D4AF37;
+
+}
+
+header nav a.active{
+    color: aquamarine;
+}
+
+.header2{
+    position: fixed;
+    height: 20%;
 }
 
 .header2 .logo {
@@ -124,105 +99,4 @@ p {
 .imagen img {
 
     width:100PX;
-    *{
-        margin:0; 
-        padding:0;
-        box-sizing: border-box;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    }
-    
-    body {
-        background-image: url(../imagenes/Adentro.png);
-        background-position: no-repeat;
-        background-attachment: fixed;
-        }
-    
-    
-    header{
-        background: #242633; 
-        width:90%; /*largo del header */
-    }
-    
-    header nav{
-        display: flex;
-    }
-    .logo{
-        width: 115px;
-        max-width: 114px;
-        text-align: center;
-        height: 100px;
-    }
-    .menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background: #10141B;
-    }
-    
-    .wrapper {
-        width:90%;
-        max-width: 1000px;
-        margin:flex;
-        overflow:hidden;
-    }
-    
-    header nav a {
-        padding: 16px 12px;
-        color: #f2f2ff;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition-duration: 3ms;
-    }
-    
-    header nav a:hover{
-        color:#D4AF37;
-    
-    }
-    
-    header nav a.active{
-        color: aquamarine;
-    }
-    
-    .header2{
-        position: fixed;
-        height: 20%;
-    }
-    
-    .header2 .logo {
-        line-height: 20%;
-        font-size: 25%;
-    }
-    .header2 nav {
-        line-height:100%;
-    }
-    
-    .main {
-       background-image: url(../imagenes/Estrellas.png);
-       padding:0;
-       overflow: hidden;
-       text-align: center;
-       width: 400px;
-       height: 450px;
-       margin: 0px;
-       display: inline-block; 
-        
-      
-    }
-    
-    .h2 {
-        font-family: 10em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    
-    
-    .main img {
-        width: 100%;
-        border-radius: 9px;
-        border-style: solid;
-        border-color: black transparent;
-     }
-    
-    .imagen img {
-    
-        width:100PX;
-    }
+}
