@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
     margin:0; 
     padding:0;
@@ -11,19 +10,6 @@ body {
     background-position: no-repeat;
     background-attachment: fixed;
     }
-=======
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: Harry P;
-    font-size: 35px;
-}
-
-body {
-    background-image: url("imagenes/Estrellas.png");
-    font-family: Harry P;
-}
->>>>>>> 12d44e1dcec25abc212b134b409d74deedb748f4
 
 a {
     text-decoration: none;
@@ -34,7 +20,6 @@ a {
     font-family: Harry P;
 }
 
-<<<<<<< HEAD
 header{
     background: #242633; 
     width:90%; /*largo del header */
@@ -48,34 +33,6 @@ header nav{
     max-width: 114px;
     text-align: center;
     height: 100px;
-=======
-.contenedor {
-    width: 100%;
-    height: 70;
-    margin: auto;
-}
-
-header {
-    background: #242633;
-    width: 100%;
-    overflow: hidden;
-    /* es importante ya que le vamos a poner unos float para desplasar de izquierda a derecha algunos elementos */
-    margin-bottom: 0px;
-}
-
-header.logo {
-    image-orientation: center;
-    margin: 40px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header div {
-    width: 100;
-    display: flex;
-    justify-content: center;
-    margin: 20px;
->>>>>>> 12d44e1dcec25abc212b134b409d74deedb748f4
 }
 
 header a.activo {
@@ -106,32 +63,14 @@ header.categorias {
     background-color: #10141B;
 }
 
-<<<<<<< HEAD
 header nav a {
     padding: 16px 12px;
     color: #f2f2ff;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition-duration: 3ms;
-=======
-header.categorias a.activo {
-    color: #9b9b9b;
-    margin: 10px 20px;
-    font-size: 50px;
-    font-weight: 700;
-    font-family: Harry P;
->>>>>>> 12d44e1dcec25abc212b134b409d74deedb748f4
-}
 
-.nombre_harry {
-    display: flex;
-    justify-content: right;
-    image-orientation: right;
-    margin: 0px;
-    justify-content: right;
-    align-items: right;
-    width: 25%;
-}
+
 
 .entra_castillo {
     display: flex;
@@ -149,7 +88,6 @@ p {
     color: #9b9b9b;
 }
 
-<<<<<<< HEAD
 .header2 .logo {
     line-height: 20%;
     font-size: 25%;
@@ -186,11 +124,105 @@ p {
 .imagen img {
 
     width:100PX;
-=======
-header {
-    background: #242633;
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: 20px;
->>>>>>> 12d44e1dcec25abc212b134b409d74deedb748f4
-}
+    *{
+        margin:0; 
+        padding:0;
+        box-sizing: border-box;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    
+    body {
+        background-image: url(../imagenes/Adentro.png);
+        background-position: no-repeat;
+        background-attachment: fixed;
+        }
+    
+    
+    header{
+        background: #242633; 
+        width:90%; /*largo del header */
+    }
+    
+    header nav{
+        display: flex;
+    }
+    .logo{
+        width: 115px;
+        max-width: 114px;
+        text-align: center;
+        height: 100px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #10141B;
+    }
+    
+    .wrapper {
+        width:90%;
+        max-width: 1000px;
+        margin:flex;
+        overflow:hidden;
+    }
+    
+    header nav a {
+        padding: 16px 12px;
+        color: #f2f2ff;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition-duration: 3ms;
+    }
+    
+    header nav a:hover{
+        color:#D4AF37;
+    
+    }
+    
+    header nav a.active{
+        color: aquamarine;
+    }
+    
+    .header2{
+        position: fixed;
+        height: 20%;
+    }
+    
+    .header2 .logo {
+        line-height: 20%;
+        font-size: 25%;
+    }
+    .header2 nav {
+        line-height:100%;
+    }
+    
+    .main {
+       background-image: url(../imagenes/Estrellas.png);
+       padding:0;
+       overflow: hidden;
+       text-align: center;
+       width: 400px;
+       height: 450px;
+       margin: 0px;
+       display: inline-block; 
+        
+      
+    }
+    
+    .h2 {
+        font-family: 10em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    
+    .main img {
+        width: 100%;
+        border-radius: 9px;
+        border-style: solid;
+        border-color: black transparent;
+     }
+    
+    .imagen img {
+    
+        width:100PX;
+    }
