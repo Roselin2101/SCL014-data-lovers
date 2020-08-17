@@ -1,11 +1,15 @@
-//import { example } from 
+import { filterHouse } from './data.js';
 // aqui va todo lo del DOM para imprimir TODO  lo que queremos mostrar en el HTML
 // aqui recorro toda la data sin filtrar ni ordenar, solo mostrar informacion e imagen 
 // Importar las funciones que creamos en el data.js
 // './data.js';importar  datos  de  './data/potter/potter.js' ;
 // aqui recorro toda la data sin filtrar ni ordenar, solo mostrar informacion e imagen 
 // Importar las funciones que creamos en el data.js
-// './data.js';
+export const filterHouse = (house, data) => {
+        let typeFilterHouse = data.filter(element => element.house.includes(house));
+        return typeFilterHouse;
+    }
+    // './data.js';
 import data from './data/potter/potter.js';
 
 let cabeceraDinamica = document.getElementById("cabecera")
@@ -24,19 +28,6 @@ cabeceraDinamica.innerHTML += `
             <a target="_blank" href="">Videos</a>
             <a target="_blank" href="https://www.wizardingworld.com/">Conoce mas!</a>
             <a target="_blank" href="https://www.wizardingworld.com/about-the-fan-club">Club de Fans</a>
-          
-        <select name="" id="seleccion">Ordenar
-      <option value="az">De la A a la Z</option>
-      </select>
-      <option value="az">De la A a la Z</option>
-      </select>
-            <select id="casas">
-                <option value="">Casas</option>
-                <option value="Gryffindor"> Gryffindor</option>
-                <option value="Slytherin"> Slytherin</option>
-                <option value="Ravenclaw"> Ravenclaw</option>
-                <option value="Hufflepuff"> Hufflepuff</option>
-              </select>
             </nav>
         </div>
       </div>
@@ -72,37 +63,9 @@ const mostrarPersonajes = () => {
 let boton = document.getElementById("btn-personajes")
 boton.addEventListener("click", mostrarPersonajes)
 
-// Establecer variable de ID para utilizarlos en Addeventlistener
-
-const casas = document.getElementById('casas'); /*Variable que contiene a la ventana de personajes que mostrara data en HTML*/
-const ordenar = document.getElementById("root");
-
-document.getElementById("container").addEventListener("click", (evento) => {
-    evento.preventDefault();
-    document.getElementById("casas").style.display = "none";
-    document.getElementById("root").style.display = "block";
-});
-
 /*Función para mostrar información relacionada al select de Casas*/
 
-const casasHarryPotter = (data) => {
 
-    for (let i = 0; i < data.length; i++) {
-        casas.innerHTML += `
-  <div class="card">
-  <div class= "cardFull">
-  <div class="front">
-  <div class ="imagenes"><img src=${data[i].image} ></div>
-  <h1>${data[i].name}</h1>
-  </div>
-  <div class="back">
-  <div class ="imagenlogo"><img src=${data[i].house}></div>
-  </div>
-  </div>
-  </div>
-  `
-    }
-}
 
 
 
