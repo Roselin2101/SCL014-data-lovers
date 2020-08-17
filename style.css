@@ -1,31 +1,34 @@
-*{
-    margin:0; 
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 body {
-    background-image: url(../imagenes/Adentro.png);
+    background-image: url(/src/imagenes/Adentro.png);
     background-position: no-repeat;
     background-attachment: fixed;
-    }
-
-
-header{
-    background: #242633; 
-    width:90%; /*largo del header */
 }
 
-header nav{
+header {
+    background: #242633;
+    width: 100%;
+    /*largo del header */
+}
+
+header nav {
     display: flex;
 }
-.logo{
-    width: 115px;
-    max-width: 114px;
+
+.logo {
+    width: 80px;
+    max-width: 80px;
     text-align: center;
-    height: 100px;
+    height: 80px;
+    justify-content: center;
 }
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -35,10 +38,10 @@ header nav{
 }
 
 .wrapper {
-    width:90%;
+    width: 90%;
     max-width: 1000px;
-    margin:flex;
-    overflow:hidden;
+    margin: flex;
+    overflow: hidden;
 }
 
 header nav a {
@@ -49,16 +52,15 @@ header nav a {
     transition-duration: 3ms;
 }
 
-header nav a:hover{
-    color:#D4AF37;
-
+header nav a:hover {
+    color: #D4AF37;
 }
 
-header nav a.active{
+header nav a.active {
     color: aquamarine;
 }
 
-.header2{
+.header2 {
     position: fixed;
     height: 20%;
 }
@@ -67,33 +69,33 @@ header nav a.active{
     line-height: 20%;
     font-size: 25%;
 }
+
 .header2 nav {
-    line-height:100%;
+    line-height: 100%;
 }
 
 .main {
-   background-image: url(../imagenes/Estrellas.png);
-   padding:0;
-   overflow: hidden;
-   text-align: center;
-   width: 400px;
-   height: 450px;
-   margin: 0px;
-   display: inline-block; 
+    background-image: url(/src/imagenes/Estrellas.png);
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 400px;
+    height: 450px;
+    margin: 0px;
+    display: inline-block;
 }
 
 .h2 {
     font-family: 1em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 .main img {
     width: 30%;
     border-radius: 9px;
-	border-style: solid;
-	border-color: black transparent;
- }
+    border-style: solid;
+    border-color: black transparent;
+}
 
 .imagen img {
-    width:50PX;
+    width: 50PX;
 }
