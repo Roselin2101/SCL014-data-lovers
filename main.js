@@ -50,22 +50,21 @@ const mostrarPersonajes = () => {
             let namePersonaje = document.getElementById("name");
 
             namePersonaje.innerHTML +=`
-                <div class='main'>
+            <div class="wrap">
+              <div class="tarjeta-wrap">
+                <div class="adelante"><img src =${data[i].image} width="100" height="100"></div>
+                <div class="atras">
                 <ul>
-                <div>
-                <br><br>
-                <img src =${data[i].image}></div>
-                <br><br>
                 <li><h2>Nombre en la saga:</h2></li>
                 <li><h2>${data[i].name}</h2></li>
                 <li><h3>Tipo de patronus: ${data[i].patronus}</h3></li>
                 <li><h3>Nombre del actor: ${data[i].actor}</h3></li>
                 <li><h3>Fecha de nacimiento: ${data[i].dateOfBirth}</h3></li>
                 </ul>
-                </div>`
-                // con el + se esta concatenando cada iteracion y muestre de uno en uno 
-                // en este caso se declara la funcion que esta guardada en el html
-        //})
+                </div>
+              </div>
+            </div>`
+-
     }
 }
 
