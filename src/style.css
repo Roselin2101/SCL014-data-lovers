@@ -75,7 +75,7 @@ header nav a.active {
 }
 
 .main {
-    background-image: url(/src/imagenes/Estrellas.png);
+    background-image: url(../imagenes/Estrellas.png);
     padding: 0;
     overflow: hidden;
     text-align: center;
