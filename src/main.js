@@ -9,7 +9,7 @@
 import data from './data/potter/potter.js';
 
 let cabeceraDinamica = document.getElementById("cabecera")
-cabeceraDinamica.innerHTML +=`
+cabeceraDinamica.innerHTML += `
 <div class="container"> 
 <header class="header2">
         <div>
@@ -24,32 +24,32 @@ cabeceraDinamica.innerHTML +=`
             <a target="_blank" href="">Videos</a>
             <a target="_blank" href="https://www.wizardingworld.com/">Conoce mas!</a>
             <a target="_blank" href="https://www.wizardingworld.com/about-the-fan-club">Club de Fans</a>
-          </nav>
+          
+        <select name="" id="seleccion">Ordenar
+      <option value="az">De la A a la Z</option>
+      </select>
+      <option value="az">De la A a la Z</option>
+      </select>
+            <select id="casas">
+                <option value="">Casas</option>
+                <option value="Gryffindor"> Gryffindor</option>
+                <option value="Slytherin"> Slytherin</option>
+                <option value="Ravenclaw"> Ravenclaw</option>
+                <option value="Hufflepuff"> Hufflepuff</option>
+              </select>
+            </nav>
         </div>
       </div>
       </header>
 </div>`
 
-// console.log(data);
-// guardo la data en una variable y la llamo personajes
-//const personajes = data;
-//console.log(personajes)
-// const personajes = data;
 const mostrarPersonajes = () => {
-    // realizo el recorrido con un for de la nueva variable para verificar que se guardo bien y semuestra la data
-    for (let i = 0; i <= data.length; i++) {
-    //    esto va aumentar hastya que se cumpla la condicion en este caso 25 se cuenta desde 0 a 24
-        // console.log(data[i])
-            //con los console verifico que ya se puede recorrer segun las propiedades de la data
-            // console.log(personajes[i]);
-            //console.log(personajes[i].name
-            // console.log(personajes[i].image)
-            //le doy funcionalidad al boton para mostrar los personajes en la pag
-        //let boton = document.getElementById("btn-personajes")
-        //boton.addEventListener("click", () => {
+        // realizo el recorrido con un for de la nueva variable para verificar que se guardo bien y semuestra la data
+        for (let i = 0; i <= data.length; i++) {
+
             let namePersonaje = document.getElementById("name");
 
-            namePersonaje.innerHTML +=`
+            namePersonaje.innerHTML += `
                 <div class='main'>
                 <ul>
                 <div>
@@ -65,10 +65,45 @@ const mostrarPersonajes = () => {
                 </div>`
                 // con el + se esta concatenando cada iteracion y muestre de uno en uno 
                 // en este caso se declara la funcion que esta guardada en el html
-        //})
+                //})
+        }
+    }
+    //  mostrarPersonajes();
+let boton = document.getElementById("btn-personajes")
+boton.addEventListener("click", mostrarPersonajes)
+
+// Establecer variable de ID para utilizarlos en Addeventlistener
+
+const casas = document.getElementById('casas'); /*Variable que contiene a la ventana de personajes que mostrara data en HTML*/
+const ordenar = document.getElementById("root");
+
+document.getElementById("container").addEventListener("click", (evento) => {
+    evento.preventDefault();
+    document.getElementById("casas").style.display = "none";
+    document.getElementById("root").style.display = "block";
+});
+
+/*Función para mostrar información relacionada al select de Casas*/
+
+const casasHarryPotter = (data) => {
+
+    for (let i = 0; i < data.length; i++) {
+        casas.innerHTML += `
+  <div class="card">
+  <div class= "cardFull">
+  <div class="front">
+  <div class ="imagenes"><img src=${data[i].image} ></div>
+  <h1>${data[i].name}</h1>
+  </div>
+  <div class="back">
+  <div class ="imagenlogo"><img src=${data[i].house}></div>
+  </div>
+  </div>
+  </div>
+  `
     }
 }
 
-//  mostrarPersonajes();
-let boton = document.getElementById("btn-personajes")
-boton.addEventListener("click", mostrarPersonajes )
+
+
+/*Función para mostrar información relacionada al select de Casas*/
