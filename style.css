@@ -4,18 +4,117 @@
     box-sizing: border-box;
 }
 
-.wrap{
-    width:1100px; 
-    margin: 50px auto;
-    display: flex;  
+body {
+    background-image: url(../imagenes/Adentro.png);
+    background-attachment: fixed;
+    background-position: center top;
+    font-family: arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.6em;
+    height: 0;
+    }
+
+.primeraPantalla{
+    background-image: url(../imagenes/Estrellas.png);
+    background-attachment: fixed;
+    background-position: center top;
+}
+/* .castillo{
+    top: 70%;
+    left: 90%;
+    right: 10%;
+}*/
+
+.enlace {
+    background-image: url(../imagenes/harrypotter2.png);
+    background-attachment: fixed;
+    background-position: center top;
+    top: 70%;
+    left: 40%;
+    right: 90%;
 }
 
-.tarjeta-wrap{
-  margin: 10px;  
+/* .castillo, .enlace{
+    z-index: 1;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.enlace, .castillo, .estrellas{
+    position: absolute; 
+} 
+header{
+    background: #242633; 
+    width:100%; /*largo del header */
+    
+} */
+
+header nav{
+    display: absolute;
+    width: 100%; 
+}
+
+.menu {
+    display: flex;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #10141B;
+}
+
+.wrapper {
+    width:90%;
+    max-width: 100px;   
+    overflow:hidden;
+}
+
+header nav a {
+    padding: 20px 12px;
+    color: #f2f2ff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition-duration: 3ms;
+}
+
+header nav a:hover{
+    color:#D4AF37;
+
+}
+
+.header2{
+    position: fixed;
+    height: 20%;
+}
+
+.logo {
+    float: left;
+}
+
+.wrap{
+   width: 320px;
+   height: 319px;
+   margin: 30px;
+   display: inline-block;
+}
+
+.tarjeta-wrap {  
+   margin: 40px;
 }
 
 .tarjeta {
     width: 300px;
     height: 350px;
-    background: #f2f2f2;
+    background-image: url(../imagenes/tarjeta.png);
+    background-size: 100%;
+    position: relative;
+    text-align: center;
+    border-style: solid;
+}
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
 }
