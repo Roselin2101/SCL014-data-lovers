@@ -1,5 +1,19 @@
 //import { example } from 
 // './data.js';
+
+import { filterHouse } from './data.js';
+// aqui va todo lo del DOM para imprimir TODO  lo que queremos mostrar en el HTML
+// aqui recorro toda la data sin filtrar ni ordenar, solo mostrar informacion e imagen 
+// Importar las funciones que creamos en el data.js
+// './data.js';importar  datos  de  './data/potter/potter.js' ;
+// aqui recorro toda la data sin filtrar ni ordenar, solo mostrar informacion e imagen 
+// Importar las funciones que creamos en el data.js
+export const filterHouse = (house, data) => {
+        let typeFilterHouse = data.filter(element => element.house.includes(house));
+        return typeFilterHouse;
+    }
+    // './data.js';
+
 import data from './data/potter/potter.js';
 
 // Cabecera
@@ -47,17 +61,31 @@ const mostrarPersonajes = () => {
                   </div>
               </ul>
             </div>`
+            // realizo el recorrido con un for de la nueva variable para verificar que se guardo bien y semuestra la data
+        for (let i = 0; i <= data.length; i++) {
+
+            let namePersonaje = document.getElementById("name");
+
+            namePersonaje.innerHTML += `
+                <div class='main'>
+                <ul>
+                <div>
+                <br><br>
+                <img src =${data[i].image}></div>
+                <br><br>
+                <li><h2>Nombre en la saga:</h2></li>
+                <li><h2>${data[i].name}</h2></li>
+                <li><h3>Tipo de patronus: ${data[i].patronus}</h3></li>
+                <li><h3>Nombre del actor: ${data[i].actor}</h3></li>
+                <li><h3>Fecha de nacimiento: ${data[i].dateOfBirth}</h3></li>
+                </ul>
+                </div>`
+                // con el + se esta concatenando cada iteracion y muestre de uno en uno 
+                // en este caso se declara la funcion que esta guardada en el html
+                //})
+        }
     }
+    //  mostrarPersonajes();
+    let boton = document.getElementById("btn-personajes")
+    boton.addEventListener("click", mostrarPersonajes)
 }
-
-//  mostrarPersonajes();
-let boton = document.getElementById("btn-personajes")
-boton.addEventListener("click", mostrarPersonajes)
-
-/*Función para mostrar información relacionada al select de Casas*/
-
-
-
-
-
-/*Función para mostrar información relacionada al select de Casas*/
