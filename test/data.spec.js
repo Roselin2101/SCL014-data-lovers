@@ -1,4 +1,4 @@
-import { example, anotherExample } from '../src/data.js';
+import { mostrarPersonajesGryffindor, mostrarPersonajesSlytherin, mostrarPersonajesHufflepuff } from '../src/main.js';
 
 
 describe('example', () => {
