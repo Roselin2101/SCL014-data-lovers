@@ -6,17 +6,12 @@
 
 #container-page-welcome {
     background-image: url('./imagenes/Estrellas.png');
-    padding: 20%;
-    /* background-attachment: fixed;
-    background-position: center top;
-    font-family: arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.6em;
-    height: 0;*/
+    background-size: cover;
 }
 
 #conatiner-page-second {
     background-image: url('./imagenes/Adentro.png');
+    background-size: cover;
 }
 
 #Entraalcastillo {
@@ -25,8 +20,8 @@
     justify-content: center;
     top: 70%;
     left: 100%;
-    right: 1000%;
-    display: block;
+    right: 900%;
+    display: inline-block;
     margin: auto;
 }
 
@@ -37,7 +32,14 @@ h1 {
     color: white;
 }
 
-#container-botones {
+h2 {
+    font-size: 12px;
+    color: seashell;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* #container-botones {
     justify-content: center;
     widows: 35%;
     height: 30%;
@@ -45,7 +47,7 @@ h1 {
     margin: auto;
     image-orientation: center;
     background-position: center top;
-}
+} */
 
 header {
     background: #242633;
@@ -60,18 +62,23 @@ header nav {
 }
 
 .logo {
-    width: 100px;
-    max-width: 100px;
-    height: 100px;
+    width: 7%;
+    max-width: 7%;
+    height: 90px;
     image-orientation: center;
     background-position: center top;
     display: block;
-    margin: auto;
+    margin: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
 }
 
 .menu {
     display: flex;
-    height: 50px;
+    height: 35%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -88,7 +95,6 @@ header nav a {
 }
 
 .header2 {
-    position: fixed;
     height: 20%;
 }
 
@@ -110,7 +116,7 @@ header nav a {
 .tarjeta {
     width: 300px;
     height: 350px;
-    background-image: url(../imagenes/tarjeta.png);
+    background-image: url(./imagenes/tarjeta.png);
     background-size: 100%;
     position: relative;
     text-align: center;
@@ -132,4 +138,51 @@ header nav a {
 
 .imagen img {
     width: 50PX;
+}
+
+#container-botones {
+    background-attachment: fixed;
+    background-image: -moz-element(20);
+    justify-content: center;
+    top: 70%;
+    left: 100%;
+    right: 900%;
+    display: inline-block;
+    margin: auto;
+}
+
+#container-botones div {
+    display: inline-block;
+}
+
+#filter-personajes {
+    width: 40%;
+    height: 90%;
+    float: left;
+    background-color: rgb(139, 52, 52);
+    background: rgba(86, 13, 26, 0.38);
+}
+
+#Entra_gryffindor,
+#Entra_slytherin,
+#Entra_hufflepuff,
+#Entra_ravenclaw {
+    width: 80px;
+    height: 100px;
+}
+
+footer {
+    background: #10141B;
+    text-align: center;
+    font-size: 15px;
+    font-family: Lucida Sans;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #f2f2ff;
+    height: 25%;
+    bottom: 0;
+}
+
+footer img {
+    width: 40px;
 }

@@ -11,34 +11,42 @@
 <body id="conatiner-page-second">
 
     <header class="header2">
-        <div>
-            <div>
-                <input class="logo" type="image" src="./imagenes/Logo wizarding.png" id="RegresarPrimeraPantalla" onclick="location.href='index.html'">
-            </div>
+
+        <div class="image-container">
+            <img class="logo" type="image" src="./imagenes/Logo wizarding.png" id="RegresarPrimeraPantalla" onclick="location.href='index.html'" />
         </div>
-        <div class="menu" id="menu">
-            <nav>
-                <a href="#" id="btn-personajes">Personajes</a>
-                <a target="_blank" href="https://www.dondeir.com/cine-y-tv/donde-ver-todas-las-peliculas-de-harry-potter-en-linea/2020/06/">Descargables</a>
-                <a target="_blank" href="https://www.wizardingworld.com/">Conoce mas!</a>
-                <a target="_blank" href="https://www.wizardingworld.com/about-the-fan-club">Club de Fans</a>
-            </nav>
+        <nav class="menu" id="menu">
+            <a href="#" id="btn-personajes">Personajes</a>
+            <a target="_blank" href="https://www.dondeir.com/cine-y-tv/donde-ver-todas-las-peliculas-de-harry-potter-en-linea/2020/06/">Descargables</a>
+            <a target="_blank" href="https://www.wizardingworld.com/">Conoce mas!</a>
+            <a target="_blank" href="https://www.wizardingworld.com/about-the-fan-club">Club de Fans</a>
+        </nav>
     </header>
 
-    <section>
-        <div id="container-botones">
-            <input type="image" src="./imagenes/banderin 2 g.png" id="Entra_gryffindor" class="Entra_gryffindor">
-            <input type="image" src="./imagenes/banderin 2 S.png" id="Entra_slytherin" class="Entra_slytherin">
-            <input type="image" src="./imagenes/banderin 4 H.png" id="Entra_hufflepuff" class="Entra_huff">
-            <input type="image" src="./imagenes/banderin 4 S.png" id="Entra_ravenclaw" class="Entra_ravenclaw">
+    <div id="container-personajes"> </div>
+
+    <section id="container-botones">
+        <div id="filter-personajes">
+            <h2>SELECCIONE CASA</h2>
+            <div>
+                <img type="image" src="./imagenes/banderin 2 g.png" id="Entra_gryffindor" class="Entra_gryffindor" />
+            </div>
+            <div>
+                <img type="image" src="./imagenes/banderin 2 S.png" id="Entra_slytherin" class="Entra_slytherin" />
+            </div>
+            <div>
+                <img type="image" src="./imagenes/banderin 4 H.png" id="Entra_hufflepuff" class="Entra_huff" />
+            </div>
+            <div>
+                <img type="image" src="./imagenes/banderin 4 S.png" id="Entra_ravenclaw" class="Entra_ravenclaw" />
+            </div>
         </div>
-        <div id="container-personajes">
-            <h1>SELECCIONE LA CASA QUE DESEAS FILTRAR</h1>
-        </div>
+
     </section>
-    </div>
     <script src="main.js" type="module"></script>
 
+
+    <footer> Reservado por Francis & Roselin 2020 <img type="image" src="./imagenes/Snich.png" id="imagen-final" /> </footer>
 </body>
 
 </html>
