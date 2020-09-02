@@ -150,3 +150,19 @@ const mostrarPersonajesRavenclaw = () => {
 
 const botonRavenclaw = document.getElementById("Entra_ravenclaw");
 botonRavenclaw.addEventListener("click", mostrarPersonajesRavenclaw);
+
+//// ORDENAR ALFABETICAMENTE  DE A a Z (array.sort(function(a, b){return b-a}); )
+const ordenarAz = (data) => {
+    const nuevoArraydata = [];
+    for (let i = 0; i < data.length; i += 1) {
+        nuevoArraydata.push(data[i]);
+        nuevoArraydata.sort((a, b) => {
+            // comparamos  2 elementos  nombre si a es mayor a b retorna -1 y se coloca antes de b
+            if (a.name < b.name) { return -1; }
+            if (a.name > b.name) { return 1; }
+            return 0;
+
+        });
+    }
+    return nuevoArraydata;
+};
