@@ -1,23 +1,20 @@
-import { mostrarPersonajesGryffindor, mostrarPersonajesSlytherin, mostrarPersonajesHufflepuff, mostrarPersonajesRavenclaw } from '../src/main.js';
+// import { mostrarPersonajesGryffindor } from '../src/main.js';
 
+// //HACER FUNCION PARA MIS TEST AQUI DATA
+// describe('mostrarPersonajesGryffindor', () => {
+//     it('is a function', () => {
+//         expect(typeof mostrarPersonajesGryffindor).toBe('function');
+//     });
+//     it('returns `mostrarPersonajesGryffindor`', () => {
+//         expect(mostrarPersonajesGryffindor()).toBe('function');
+//     });
+// });
+// describe('anotherExample', () => {
+//     it('is a function', () => {
+//     expect(typeof anotherExample).toBe('function');
+//     });
 
-describe('mostrarPersonajesGryffindor', () => {
-    it('is a function', () => {
-        expect(typeof mostrarPersonajesGryffindor).toBe('function');
-    });
-
-    it('returns `mostrarPersonajesGryffindor`', () => {
-        expect(mostrarPersonajesGryffindor()).toBe('');
-    });
-});
-
-
-describe('anotherExample', () => {
-    it('is a function', () => {
-        expect(typeof anotherExample).toBe('function');
-    });
-
-    it('returns `anotherExample`', () => {
-        expect(anotherExample()).toBe('OMG');
-    });
-});
+//     it('returns `anotherExample`', () => {
+//         expect(anotherExample()).toBe('OMG');
+//     });
+// });
