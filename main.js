@@ -1,4 +1,5 @@
-import data from './data/potter/potter.js';
+import data from 
+'./data/potter/potter.js';
 
 const mostrarPersonajes = () => {
   for (let i = 0; i <= data.length; i += 1) {
