@@ -1,5 +1,5 @@
-import data from 
-'./data/potter/potter.js';
+// import {filterHouseGryffindor}from './data.js'; 
+import data from './data/potter/potter.js';
 
 const mostrarPersonajes = () => {
   for (let i = 0; i <= data.length; i += 1) {
@@ -20,16 +20,16 @@ const mostrarPersonajes = () => {
    </div>
    </ul>
    </div>`;
+   document.getElementById('filter-personajes').style.display = 'none';
+   document.getElementById('container-personajes').style.display = 'block';
   }
 };
 const boton = document.getElementById('btn-personajes');
 boton.addEventListener('click', mostrarPersonajes);
 
-// Funcion para mostrar personajes de Gryffindor
-
 const mostrarPersonajesGryffindor = () => {
   for (let i = 0; i <= data.length; i += 1) {
-    if (data[i].house === 'Gryffindor') {
+    if (data[i].house === 'Gryffindor'){
       const personajesGryffindor = document.getElementById('container-personajes');
       personajesGryffindor.innerHTML += `
 <div class='wrap'>
@@ -47,13 +47,13 @@ const mostrarPersonajesGryffindor = () => {
       </div>
   </ul>
 </div>`;
+document.getElementById('filter-personajes').style.display = 'none';
+document.getElementById('container-personajes').style.display = 'block';
+      }
     }
-  }
-};
-const botonGryffindor = document.getElementById('Entra_gryffindor');
-botonGryffindor.addEventListener('click', mostrarPersonajesGryffindor);
-
-// Funcion para mostrar personajes de Slytherin
+  };
+  const botonGryffindor = document.getElementById('Entra_gryffindor');
+  botonGryffindor.addEventListener('click', mostrarPersonajesGryffindor);
 
 const mostrarPersonajesSlytherin = () => {
   for (let i = 0; i <= data.length; i += 1) {
@@ -75,19 +75,19 @@ const mostrarPersonajesSlytherin = () => {
     </div>
 </ul>
 </div>`;
+document.getElementById('filter-personajes').style.display = 'none';
+document.getElementById('container-personajes').style.display = 'block';
     }
   }
 };
 const botonSlytherin = document.getElementById('Entra_slytherin');
 botonSlytherin.addEventListener('click', mostrarPersonajesSlytherin);
 
-// Funcion para mostrar personajes de hufflepuff
-
-const mostrarPersonajesHufflepuff = () => {
-  for (let i = 0; i <= data.length; i += 1) {
-    if (data[i].house === 'Hufflepuff') {
-      const personajesHufflepuff = document.getElementById('container-personajes');
-      personajesHufflepuff.innerHTML += `
+  const mostrarPersonajesHufflepuff = () => {
+    for (let i = 0; i <= data.length; i += 1) {
+      if (data[i].house === 'Hufflepuff') {
+        const personajesHufflepuff = document.getElementById('container-personajes');
+        personajesHufflepuff.innerHTML += `
 <div class="wrap">
 <ul>
   <div class="tarjeta-wrap">
@@ -102,20 +102,21 @@ const mostrarPersonajesHufflepuff = () => {
         </div>
     </div>
 </ul>
-</div>`;
+</div>`
+document.getElementById('filter-personajes').style.display = 'none';
+document.getElementById('container-personajes').style.display = 'block';
+      }
     }
-  }
-};
-const botonHufflepuff = document.getElementById('Entra_hufflepuff');
-botonHufflepuff.addEventListener('click', mostrarPersonajesHufflepuff);
+  };
 
-// Funcion para mostrar personajes de Revenclaw
+  const botonHufflepuff = document.getElementById('Entra_hufflepuff');
+  botonHufflepuff.addEventListener('click', mostrarPersonajesHufflepuff);
 
-const mostrarPersonajesRavenclaw = () => {
-  for (let i = 0; i <= data.length; i += 1) {
-    if (data[i].house === 'Ravenclaw') {
-      const personajesRavenclaw = document.getElementById('container-personajes');
-      personajesRavenclaw.innerHTML += `
+  const mostrarPersonajesRavenclaw = () => {
+    for (let i = 0; i <= data.length; i += 1) {
+      if (data[i].house === 'Ravenclaw') {
+        const personajesRavenclaw = document.getElementById('container-personajes');
+        personajesRavenclaw.innerHTML += `
 <div class="wrap">
 <ul>
 <div class="tarjeta-wrap">
@@ -131,8 +132,11 @@ const mostrarPersonajesRavenclaw = () => {
   </div>
 </ul>
 </div>`;
+document.getElementById('filter-personajes').style.display = 'none';
+document.getElementById('container-personajes').style.display = 'block';
+      }
     }
-  }
-};
-const botonRavenclaw = document.getElementById('Entra_ravenclaw');
-botonRavenclaw.addEventListener('click', mostrarPersonajesRavenclaw);
+  };
+  const botonRavenclaw = document.getElementById('Entra_ravenclaw');
+  botonRavenclaw.addEventListener('click', mostrarPersonajesRavenclaw);
+
