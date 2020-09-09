@@ -104,6 +104,8 @@
 
     .tarjeta-wrap {
         margin: 40px;
+        font-size: 18px;
+        font-family: Harry P;
     }
 
     .tarjeta {
@@ -111,11 +113,8 @@
         height: 250px;
         background-image: url(./imagenes/tarjeta.png);
         background-size: 100%;
-        position: relative;
         text-align: center;
         border-style: solid;
-        font-size: 18px;
-        font-family: Harry P;
     }
 
     .adelante,
@@ -140,7 +139,6 @@
         height: 100%;
         background-position-y: center;
         background-position-x: center;
-  
 
     }
     .filter-personajes {
