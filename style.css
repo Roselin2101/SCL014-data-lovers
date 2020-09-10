@@ -8,6 +8,7 @@
         background-image: url('./imagenes/Estrellas.png');
         background-size: cover;
         width: 100%;
+        align-items: flex-end;
     }
 
     #conatiner-page-second {
@@ -66,6 +67,7 @@
     .image-container {
         display: flex;
         justify-content: center;
+        
     }
 
     .menu {
@@ -134,11 +136,12 @@
     }
 
     #container-personajes {
-        display: block;
+        display: inline-block;
         width: 100%;
         height: 100%;
         background-position-y: center;
         background-position-x: center;
+        justify-content: space-between
 
     }
     .filter-personajes {
@@ -183,9 +186,9 @@
             color: red;
         }
         /* pantalla escritorio mediana md */
-        @media(max-width: 1199px) and (min-width: 992px) {}
+        @media(max-width: 1190px) and (min-width: 992px) {}
         /* pantalla table */
         @media(max-width:991px) and (min-width:768px) {}
         /* pantalla telefonos xs */
-        @media(max-width:767px) {}
+        @media(max-width:467px) {}
     }
