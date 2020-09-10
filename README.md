@@ -11,7 +11,6 @@
 * [6. Diseño final de la aplicacion ](#6-hacker-edition)
 
 
-
 ## 1. Introducción
 El objetivo fundamental de este proyecto es  construir una página web la cual deberá permitir a los usuarios visualzar un conjunto de datos relacionados a la saga de Harry Potter. Además de visualizarlos tambien permitirles ordenar y filtrar los personajes por casa, profesores y estudiantes.  
 

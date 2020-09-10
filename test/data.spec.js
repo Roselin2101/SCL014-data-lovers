@@ -18,11 +18,12 @@ const dataHarryPrueba = [{
   name: 'Cho Chang',
   house: 'Ravenclaw',
 }];
+
 describe('filterHouse', () => {
   it('is a function', () => {
     expect(typeof filterHouse).toBe('function');
   });
-  it('returns `Quiero que me devuelva el nombre y la casa que pertenecen los personajes de Harry Potter`', () => {
-    expect(filterHouse(dataHarryPrueba, 'House')).toBe('Gryffindor');
+  test('deberia retornar Harry Potter, para cuando filtre por Gryffindor', () => {
+    expect(filterHouse(dataHarryPrueba, 'Gryffindor')).toEqual([{ house: 'Gryffindor', name: 'Harry Potter' }]);
   });
 });
