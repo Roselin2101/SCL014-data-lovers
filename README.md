@@ -17,6 +17,7 @@ El objetivo fundamental de este proyecto es  construir una página web la cual d
 ## 2. Resumen del proyecto
 
 Partimos pensando en una planificacion y organización, para llevar a cabo los objetivos, debido a esto se implemento la herramienta [Trello](https://trello.com/invite/b/TTwdmQHT/edbacbe0bdb2f2ed41096c422200969c/data-lovers)(colocar imagen del trello) Esta nos ayudo a dividir el proyecto en tecnicas para alcanzar los objetivos de aprendizaje
+![image](https://user-images.githubusercontent.com/66626147/93085083-697db100-f66b-11ea-881f-a347dc5cc999.png) Trello
 
 Donde escribiendo una especie de receta nos encontramos agregando los  ingredientes necesarios para convertir nuestra idea en una realidad, cuidando la estética y lo que el ususario necesita para usar nuestra aplicacion. interfaces y visualizaciones.
 
@@ -26,9 +27,7 @@ Poco a poco hemos definido un paso a paso que expondremos:
 2. Hacer Planificacion(Trello, google calendar)
 3. Hacer un primer bozeto de baja fidelidad donde organizamos nuestras ideas a mano.
 4. Buscar las imagenes y colores correcto para empezar a hacer nuestro prototipo de alta fidelidad.
-5. Hacer prototipo de alta fidelidad por medio de [Figma](https://www.figma.com/file/bqaSp8DrxUJ5YCDiRuS3MA/Untitled?node-id=33%3A6)(colocar la imagen del figma)
-
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+5. Hacer prototipo de alta fidelidad por medio de [Figma](https://www.figma.com/file/bqaSp8DrxUJ5YCDiRuS3MA/Untitled?node-id=33%3A6)
 
 ## 3.Definición del producto
 
@@ -51,19 +50,23 @@ Definición de terminado:
 Realizar en el código la primera pantalla donde se presione el boton personajes y se muestren todos los personajes en la siguiente pantalla.
 Testear para recibir el feedback de la primera pantalla de usuarios nuevos fans.
 
-*(aqui va una foto de un usuario iterando la pagina )*
+![image](https://user-images.githubusercontent.com/66626147/93086084-f37a4980-f66c-11ea-8a2b-6161130de4ff.png)
+
 
 Historia-2. 
 Yo como usuario nuevo fans de Harry Potter quiero filtrar por casa a los personajes para conocer las casas donde pertenecen cada uno de ellos
 
 Criterios de aceptación:
  
- Crear una pantalla para cada casa( Gryffindor, Hufflepuff, Ravenclaw y Slytherin) con los personajes que le pertenecen a cada una.
+ Crear una pantalla donde se muestre cada casa( Gryffindor, Hufflepuff, Ravenclaw y Slytherin) con los personajes que le pertenecen a cada una.
  Crear una pantalla con  botones que identifiquen a cual casa quieren entrar entrar 
  
 Definición de terminado:
 
 Hacer que nuestros usuarios interactuen en la página al hacer click ir a otra pantalla para ver cada una de las casas con sus personajes
+![image](https://user-images.githubusercontent.com/66626147/93086302-4e13a580-f66d-11ea-9358-c52fcb611570.png)
+
+
 
 Historia-3. Yo como usuario nuevo fans de Harry Potter quiero ordenar a los usuarios de forma ascendente o descendente para verlos en orden alfabetico
 
@@ -71,7 +74,7 @@ Criterios de aceptación:
  Crear un boton que permita al usuario ordenar a los personajes de A-Z y de Z-A
 
 Definición de terminado:
-Hacer que nuestros usuarios interactuen en la página al hacer click a una de estas dos opciones la pagina le arroje a los personajes ordenados
+Hacer que nuestros usuarios interactuen en la página al hacer click en una de estas dos opciones, la pagina le arroje a los personajes ordenados
 
 ## 5. Diseño de la interfaz de usuarios
 
