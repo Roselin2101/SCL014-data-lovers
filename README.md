@@ -29,6 +29,7 @@ Poco a poco hemos definido un paso a paso que expondremos:
 4. Buscar las imagenes y colores correcto para empezar a hacer nuestro prototipo de alta fidelidad.
 5. Hacer prototipo de alta fidelidad por medio de [Figma](https://www.figma.com/file/bqaSp8DrxUJ5YCDiRuS3MA/Untitled?node-id=33%3A6)
 
+
 ## 3.Definición del producto
 
 Este proyecto se destaco en dar a conocer a los usuarios sobre los personajes de la saga Harry Potter basandose en que el proceso del diseño del producto se estructuro bajo las necesidades de los usuarios nuevos fans de Harry Potter; ellos querian conocer  las características e información relevante de los personajes de Harry Potter. Para llegar a esto, comenzamos realizando una encuesta para saber que datos eran considerados para nuestros usuarios de mayor importancia. Una vez determinado comenzamos a definir las historias de usuario.
@@ -69,26 +70,48 @@ Hacer que nuestros usuarios interactuen en la página al hacer click ir a otra p
 ![image](https://user-images.githubusercontent.com/66626147/93086302-4e13a580-f66d-11ea-9358-c52fcb611570.png)
 
 
-
-Historia-3. Yo como usuario nuevo fans de Harry Potter quiero ordenar a los usuarios de forma ascendente o descendente para verlos en orden alfabetico
+Historia-3. Yo como usuario nuevo fans de Harry Potter quiero ordenar a los usuarios de forma ascendente para verlos en orden alfabetico
 
 Criterios de aceptación: 
 Crear un boton que permita al usuario ordenar a los personajes de A-Z
 
 Definición de terminado:
-Hacer que nuestros usuarios interactuen en la página al hacer click en un boton para ordenar, así la pagina le arroje a los personajes ordenados
+Hacer que nuestros usuarios interactuen en la página al hacer click en un boton para ordenar, así la pagina le arroje a los personajes ordenados.
+
+
+![image](https://user-images.githubusercontent.com/66626147/93688258-e14c4100-fa9a-11ea-8e67-27d746a999e9.png)
+
+
 
 ## 5. Diseño de la interfaz de usuarios
 
-Pototipo a lapiz 
-*(aqui va una foto)*
-Prototipo de baja fidelidad 
-*(aqui va una foto)*
-Prototipo de alta fidelidad
-*(aqui va una foto)*
+![image](https://user-images.githubusercontent.com/66626147/93687932-536f5680-fa98-11ea-89cd-4e7fe9626475.png)
+## Pototipo a lapiz 
+
+
+
+![image](https://user-images.githubusercontent.com/66626147/93688130-ef4d9200-fa99-11ea-9a51-788da522a1cf.png)
+## Prototipo de baja fidelidad 
+
+
+![image](https://user-images.githubusercontent.com/66626147/93688150-2623a800-fa9a-11ea-92da-71bdf107f76e.png)
+## Prototipo de alta fidelidad
+
+
+![image](https://user-images.githubusercontent.com/66626147/93688169-4d7a7500-fa9a-11ea-9c8d-03cc3fc39e4d.png)
+## Prototipo de alta fidelidad
+
+
 
 ## 6.  Diseño final de la aplicacion
-Asi quedo nuestro proyecto 
+
+![image](https://user-images.githubusercontent.com/66626147/93688228-9a5e4b80-fa9a-11ea-9345-a8a0557c7934.png)
+
+
+
+![image](https://user-images.githubusercontent.com/66626147/93688239-b661ed00-fa9a-11ea-803f-e662965a58dd.png)
+
+## Asi quedo nuestro proyecto 
 *(aqui va una foto)*
 
 
