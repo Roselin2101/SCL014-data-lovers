@@ -64,6 +64,8 @@ Criterios de aceptación:
 Definición de terminado:
 
 Hacer que nuestros usuarios interactuen en la página al hacer click ir a otra pantalla para ver cada una de las casas con sus personajes
+
+
 ![image](https://user-images.githubusercontent.com/66626147/93086302-4e13a580-f66d-11ea-9358-c52fcb611570.png)
 
 
@@ -71,10 +73,10 @@ Hacer que nuestros usuarios interactuen en la página al hacer click ir a otra p
 Historia-3. Yo como usuario nuevo fans de Harry Potter quiero ordenar a los usuarios de forma ascendente o descendente para verlos en orden alfabetico
 
 Criterios de aceptación: 
- Crear un boton que permita al usuario ordenar a los personajes de A-Z y de Z-A
+Crear un boton que permita al usuario ordenar a los personajes de A-Z
 
 Definición de terminado:
-Hacer que nuestros usuarios interactuen en la página al hacer click en una de estas dos opciones, la pagina le arroje a los personajes ordenados
+Hacer que nuestros usuarios interactuen en la página al hacer click en un boton para ordenar, así la pagina le arroje a los personajes ordenados
 
 ## 5. Diseño de la interfaz de usuarios
 
