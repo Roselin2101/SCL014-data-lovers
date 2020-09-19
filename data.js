@@ -10,8 +10,8 @@ export const filterHouse = (data, house) => {
 
 // export function orderAToZ(data) {
 //   return data.sort((a, b) => a.name.localeCompare(b.name));
-// Llama a la función y le envía toda la data con un sort de a a-z
-}
+// Llama a la función y le envía toda la data con un sort de a a-z}
+
 
  export const ordenarData = (data, key, ordenar) => { }
 // recorridoOrdenar = data.sort((a, b) => {
