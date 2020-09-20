@@ -1,6 +1,6 @@
 // import {filterHouse}from './data.js';
 import data from './data/potter/potter.js';
-import {filterHouse, ordenarData} from './data.js';
+import filterHouse from './data.js';
 
 
 // funcion para mostrar personajes
@@ -31,18 +31,17 @@ const mostrarPersonajes = () => {
 const botonPersonajes = document.getElementById('btn-personajes');
 botonPersonajes.addEventListener('click', mostrarPersonajes);
 
-// FUNCION QUE PERMITE ORDENAR 
-
-const botonOrdenarPersonajes= document.getElementById('btn-Ordenarpersonajes')
-botonOrdenarPersonajes.addEventListener('click', ()=> { 
+// FUNCION QUE PERMITE ORDENAR
+const botonOrdenarPersonajes = document.getElementById('btn-Ordenarpersonajes');
+botonOrdenarPersonajes.addEventListener('click', () => {
   const recorridoOrdenar = data.sort((a, b) => {
-    if (a.name > b.name){return 1;}
-    if (a.name < b.name){return -1;}
+    if (a.name > b.name) { return 1; }
+    if (a.name < b.name) { return -1; }
     return 0;
-    });
-  for(let i=0; i<=recorridoOrdenar.length; i+=1){
-    let recorridoPersonajesOrdenados = document.getElementById('container-personajes')
-    recorridoPersonajesOrdenados.innerHTML+= `
+  });
+  for (let i = 0; i <= recorridoOrdenar.length; i += 1) {
+    const recorridoPersonajesOrdenados = document.getElementById('container-personajes');
+    recorridoPersonajesOrdenados.innerHTML += `
     <div class="wrap">
       <ul>
        <div class="tarjeta-wrap">
@@ -59,10 +58,9 @@ botonOrdenarPersonajes.addEventListener('click', ()=> {
      </div>`;
     document.getElementById('filter-personajes').style.display = 'none';
     document.getElementById('container-personajes').style.display = 'block';
-  }  
+  }
 });
-  
- 
+
 const botonGryffindor = document.getElementById('Entra_gryffindor');
 botonGryffindor.addEventListener('click', () => {
   const casaGryffindor = filterHouse(data, 'Gryffindor');
@@ -164,6 +162,5 @@ botonRavenclaw.addEventListener('click', () => {
 </div>`;
     document.getElementById('filter-personajes').style.display = 'none';
     document.getElementById('container-personajes').style.display = 'block';
-   }
- })
-
+  }
+});
