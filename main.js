@@ -1,9 +1,9 @@
 // import {filterHouse}from './data.js';
 import data from './data/potter/potter.js';
-import filterHouse from './data.js';
+import { filterHouse, ordenarData } from './data.js';
 
 
-// funcion para mostrar personajes
+//  mostrar personajes de la data completa
 const mostrarPersonajes = () => {
   for (let i = 0; i <= data.length; i += 1) {
     const namePersonaje = document.getElementById('container-personajes');
@@ -31,14 +31,10 @@ const mostrarPersonajes = () => {
 const botonPersonajes = document.getElementById('btn-personajes');
 botonPersonajes.addEventListener('click', mostrarPersonajes);
 
-// FUNCION QUE PERMITE ORDENAR
+// Ordenar personajes de la data de A-Z
 const botonOrdenarPersonajes = document.getElementById('btn-Ordenarpersonajes');
 botonOrdenarPersonajes.addEventListener('click', () => {
-  const recorridoOrdenar = data.sort((a, b) => {
-    if (a.name > b.name) { return 1; }
-    if (a.name < b.name) { return -1; }
-    return 0;
-  });
+  const recorridoOrdenar = ordenarData(data);
   for (let i = 0; i <= recorridoOrdenar.length; i += 1) {
     const recorridoPersonajesOrdenados = document.getElementById('container-personajes');
     recorridoPersonajesOrdenados.innerHTML += `
@@ -47,7 +43,7 @@ botonOrdenarPersonajes.addEventListener('click', () => {
        <div class="tarjeta-wrap">
          <div class="tarjeta">
          <br>
-          <div class="adelante"><img src =${recorridoOrdenar[i].image} width="130" height="130"></</div>
+           <div class="adelante"><img src =${recorridoOrdenar[i].image} width="130" height="130"></</div>
             <div class="atras">
               <br>
               <p>Nombre en la saga:</p>
@@ -60,7 +56,7 @@ botonOrdenarPersonajes.addEventListener('click', () => {
     document.getElementById('container-personajes').style.display = 'block';
   }
 });
-
+// mostrar personajes de la casa Gryffindor
 const botonGryffindor = document.getElementById('Entra_gryffindor');
 botonGryffindor.addEventListener('click', () => {
   const casaGryffindor = filterHouse(data, 'Gryffindor');
@@ -86,7 +82,7 @@ botonGryffindor.addEventListener('click', () => {
     document.getElementById('container-personajes').style.display = 'block';
   }
 });
-
+// mostrar personajes de la casa Slytherin
 const botonSlytherin = document.getElementById('Entra_slytherin');
 botonSlytherin.addEventListener('click', () => {
   const casaSlytherin = filterHouse(data, 'Slytherin');
@@ -112,6 +108,7 @@ botonSlytherin.addEventListener('click', () => {
     document.getElementById('container-personajes').style.display = 'block';
   }
 });
+// mostrar personajes de la casa Hufflepuff
 
 const botonHufflepuff = document.getElementById('Entra_hufflepuff');
 botonHufflepuff.addEventListener('click', () => {
@@ -138,7 +135,7 @@ botonHufflepuff.addEventListener('click', () => {
     document.getElementById('container-personajes').style.display = 'block';
   }
 });
-
+// mostrar personajes de la casa Ravenclaw
 const botonRavenclaw = document.getElementById('Entra_ravenclaw');
 botonRavenclaw.addEventListener('click', () => {
   const casaRavenclaw = filterHouse(data, 'Ravenclaw');
