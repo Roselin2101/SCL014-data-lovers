@@ -1,4 +1,4 @@
-import filterHouse from '../src/data.js';
+import { filterHouse } from '../src/data.js';
 
 // //HACER FUNCION PARA MIS TEST AQUI DATA
 
