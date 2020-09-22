@@ -56,7 +56,9 @@
     header nav {
         display: flex;
         width: 100%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        font-family: Harry P;
+        font-size: 30px;
+        /* 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
     }
 
     .logo {
@@ -90,6 +92,7 @@
         transition-duration: 3ms;
         color: #D4AF37;
         display: flex;
+        justify-content: center;
     }
 
     .header2 {
@@ -109,14 +112,16 @@
 
     .tarjeta-wrap {
         margin: 40px;
-        font-size: 22px;
-        font-family: Harry P;
+        font-size: 14px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        /* font-family: Harry P; */
         /* Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
         text-shadow: gray;
+        font-weight: bold;
     }
 
     .tarjeta {
-        width: 230px;
+        width: 210px;
         height: 270px;
         background-image: url(./imagenes/tarjeta.png);
         background-size: 100%;
@@ -141,6 +146,7 @@
     #container-personajes {
 
         flex-wrap: wrap;
+        justify-content: center;
 
     }
 
