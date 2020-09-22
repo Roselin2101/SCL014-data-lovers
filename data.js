@@ -26,6 +26,7 @@ export function ordenarData(data) {
 //       return ((a.key > b.key) ? -1 : ((a.key < b.key) ? 1 : 0));
 //     }
 //   });
+
 // Llama a la función y le envía toda la data con un sort de a a-z}
 
 // const ordenar = data.sort(( a, b) => {
