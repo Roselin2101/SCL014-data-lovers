@@ -1,4 +1,4 @@
-import { filterHouse } from '../src/data.js';
+import { filterHouse, ordenarData } from '../src/data.js';
 
 // //HACER FUNCION PARA MIS TEST AQUI DATA
 
@@ -25,5 +25,14 @@ describe('filterHouse', () => {
   });
   test('deberia retornar Harry Potter, para cuando filtre por Gryffindor', () => {
     expect(filterHouse(dataHarryPrueba, 'Gryffindor')).toEqual([{ house: 'Gryffindor', name: 'Harry Potter' }]);
+  });
+});
+
+describe('ordenarData', () => {
+  it('is a function', () => {
+    expect(typeof ordenarData).toBe('function');
+  });
+  test('deberia retornar la  dataHarryPrueba ordenada por name', () => {
+    expect(ordenarData(dataHarryPrueba)).toEqual([{ name: 'Cedric Diggory', house: 'Hufflepuff' }, { name: 'Cho Chang', house: 'Ravenclaw' }, { name: 'Draco Malfoy', house: 'Slytherin' }, { name: 'Harry Potter', house: 'Gryffindor' }]);
   });
 });
