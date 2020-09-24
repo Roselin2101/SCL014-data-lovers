@@ -4,8 +4,8 @@ import { filterHouse, ordenarData } from './data.js';
 
 //  mostrar personajes de la data completa
 const mostrarPersonajes = () => {
-document.getElementById('container-personajes').innerHTML='';
-  for (let i = 0; i <= data.length; i += 1) { 
+  document.getElementById('container-personajes').innerHTML = '';
+  for (let i = 0; i <= data.length; i += 1) {
     const namePersonajes = document.getElementById('container-personajes');
     namePersonajes.innerHTML += `
   <div class="wrap">
@@ -34,7 +34,7 @@ botonPersonajes.addEventListener('click', mostrarPersonajes);
 // Ordenar personajes de la data de A-Z
 const botonOrdenarPersonajes = document.getElementById('btn-Ordenarpersonajes');
 botonOrdenarPersonajes.addEventListener('click', () => {
-document.getElementById('container-personajes').innerHTML = ' ';
+  document.getElementById('container-personajes').innerHTML = ' ';
   const recorridoOrdenar = ordenarData(data);
   for (let i = 0; i <= recorridoOrdenar.length; i += 1) {
     const recorridoPersonajesOrdenados = document.getElementById('container-personajes');
@@ -54,7 +54,6 @@ document.getElementById('container-personajes').innerHTML = ' ';
      </div>`;
     // document.getElementById('filter-personajes').style.display = 'none';
     // document.getElementById('container-personajes').style.display = 'block';
-     
   }
 });
 // mostrar personajes de la casa Gryffindor
@@ -63,7 +62,7 @@ botonGryffindor.addEventListener('click', () => {
   document.getElementById('container-personajes').innerHTML = ' ';
   const casaGryffindor = filterHouse(data, 'Gryffindor');
   for (let i = 0; i <= casaGryffindor.length; i += 1) {
-    let personajesGryffindor = document.getElementById('container-personajes');
+    const personajesGryffindor = document.getElementById('container-personajes');
     personajesGryffindor.innerHTML += `
     <div class="wrap">
       <ul>
@@ -106,12 +105,10 @@ botonSlytherin.addEventListener('click', () => {
          </div>
        </ul>
      </div>`;
-    //  personajesSlytherin.innerHTML= '';
     // document.getElementById('filter-personajes').style.display = 'none';
     // document.getElementById('container-personajes').style.display = 'block';
-  } 
+  }
 });
-
 // mostrar personajes de la casa Hufflepuff
 
 const botonHufflepuff = document.getElementById('Entra_hufflepuff');
