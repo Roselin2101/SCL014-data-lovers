@@ -109,7 +109,7 @@ botonSlytherin.addEventListener('click', () => {
     // document.getElementById('container-personajes').style.display = 'block';
   }
 });
-// mostrar personajes de la casa Hufflepuff
+// mostrar personanjes de la casa Hufflepuff
 
 const botonHufflepuff = document.getElementById('Entra_hufflepuff');
 botonHufflepuff.addEventListener('click', () => {
